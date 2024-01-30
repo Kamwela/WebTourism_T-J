@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 50px;
+            background-image: url(picha/africanwildlife11.jpg);
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        a {
+    text-decoration: none;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <label for="name">Name or Email:</label>
+            <input type="text" id="name" name="Name or Email" required>
+           
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Submit</button>
+            <button type="ForgetPassword">ResetPassword</button>
+            <button type="SignUp"><a href="form.html">SingUp</a></button>
+            <form action="login.php" method="post"></form>
+            
+        </form>
+    </div>
+</body>
+</html>
+
+
